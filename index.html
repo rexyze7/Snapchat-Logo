@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snapchat Website</title>
+<!--FONTI-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="Snap.svg" type="image/svg+xml">
+
+</head>
+
+<body>
+
+<div class="header">
+  <h1>Snapchat</h1>
+  <h3>Share the moment 👻</h3>
+</div>
+
+<div class="container">
+  <ul class="menu">
+  <li onclick="showLogo('png')">PNG</li>
+  <li onclick="showLogo('svg')">SVG</li>
+  <li onclick="showLogo('canvas')">CANVA</li>
+</ul>
+
+ <div class="main">
+  <h2>Snapchat Logos</h2>
+
+  <!-- PNG -->
+  <div id="png" class="logo">
+    <img src="Snapchat-Logo.png" alt="Snapchat PNG">
+  </div>
+
+  <!-- SVG -->
+  <div id="svg" class="logo">
+    <svg viewBox="0 0 3840 2160">
+      <path fill="yellow" stroke="black" stroke-width="0" d="M 874.43,1824.12 C 874.43,1824.12 874.04,334.64 874.04,334.64 872.25,334.69 881.58,273.37 884.79,273.28 879.66,263.91 952.08,128.54 960.73,134.59 956.04,130.70 1067.08,47.61 1075.10,54.29 1083.07,43.98 1195.98,22.87 1192.87,26.91 1192.87,26.91 2660.52,27.63 2660.52,27.63 2692.03,26.19 2788.99,57.77 2796.68,66.94 2807.01,67.80 2874.25,117.21 2896.30,149.31 2907.50,153.24 2957.28,243.70 2961.03,276.58 2963.97,276.02 2974.37,346.42 2971.87,347.21 2971.87,347.21 2972.14,1817.56 2972.14,1817.56 2976.41,1841.13 2929.64,1974.76 2913.63,1980.44 2918.48,1987.11 2799.98,2099.26 2791.88,2088.12 2795.22,2096.46 2706.50,2124.25 2665.55,2125.15 2665.55,2125.15 1183.41,2125.32 1183.41,2125.32 1151.71,2125.68 1071.04,2101.61 1073.75,2098.90 1056.69,2093.41 979.09,2044.24 986.47,2043.01 975.76,2039.63 911.22,1957.16 914.52,1954.47 913.13,1955.21 888.18,1900.31 890.22,1898.03 886.23,1897.61 871.93,1823.86 874.43,1824.12 Z"/>
+      <path fill="white" stroke="black" stroke-width="40" d="M 1477.85,829.09 C 1438.16,163.45 2409.62,172.70 2368.12,830.55 2430.53,810.47 2532.11,832.27 2546.73,939.42 2549.55,1045.02 2482.41,1072.92 2392.55,1136.75 2389.13,1246.86 2646.77,1368.51 2673.15,1424.58 2699.96,1505.84 2609.72,1562.52 2493.01,1595.58 2468.75,1639.39 2474.97,1669.53 2377.68,1694.09 2290.89,1693.59 2201.47,1710.62 2180.20,1736.56 2009.43,1845.55 1863.61,1846.88 1686.40,1750.45 1701.06,1737.18 1552.34,1687.91 1543.86,1697.05 1416.77,1698.38 1372.62,1654.90 1351.88,1594.03 1255.56,1571.96 1166.59,1515.77 1170.46,1439.89 1173.95,1383.99 1212.75,1379.31 1301.17,1322.95 1367.27,1293.02 1477.64,1148.53 1454.92,1131.68 1145.67,968.96 1365.09,779.74 1477.85,829.09 Z"/>
+    </svg>
+  </div>
+
+  <!-- CANVAS -->
+  <div id="canvas" class="logo">
+    <canvas id="c"></canvas>
+  </div>
+  <label for="hueSlider">Canvas background color</label>
+<input type="range" id="hueSlider" min="0" max="360" value="55"/>
+</div>
+
+  <div class="right">
+    <h2>Note</h2>
+    <p>This is a website made to showcase the logos made with canva and svg.</p>
+
+    <h2>Made By</h2>
+    <p>Žiga Makuc, 4. Rb</p>
+  </div>
+</div>
+
+<div class="footer">
+  © 2026 Snapchat · This is a student/demo website
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>
