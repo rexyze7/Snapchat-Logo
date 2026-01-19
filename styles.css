@@ -92,7 +92,7 @@ body {
 }
 
 .right p {
-  font-size: 0.9rem;
+  font-size: 15px;
   margin-bottom: 15px;
 }
 
@@ -102,7 +102,7 @@ body {
   color: white;
   text-align: center;
   padding: 16px;
-  font-size: 0.85rem;
+  font-size: 14,5px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -143,4 +143,5 @@ svg,img,canvas {
     flex: 1;
     margin: 5px;
   }
+
 }
